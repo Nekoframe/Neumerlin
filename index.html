@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"           content="Neumerlin, Salad, Neumerlin Group">
+    <meta name="description"        content="Neumerlin Group">
+    <meta name="author"             content="Thanawan Pinlaem (www.zbframe.com)">
+    <meta name="designer"           content="Salad Company Limited">
+    
+
+    <title>Neumerlin Group</title>
+
+    <!-- Bootstrap -->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- jQuery Mobile -->
+    <script src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- Mobile Swiper -->
+    <script>
+    $(document).ready(function() {
+       $("#myCarousel").swiperight(function() {
+          $(this).carousel('prev');
+        });
+       $("#myCarousel").swipeleft(function() {
+          $(this).carousel('next');
+       });
+    });
+    </script>
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <script src="https://use.fontawesome.com/cd6de6f333.js"></script>
+
+    <!-- <link href="css/fonts.css" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="css/main_style.css" rel="stylesheet">
+
+
+
+    <!-- Captcha -->
+    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+
+  </head>
+  <body>
+
+
+    <div class="container-fluid">
+
+
+      <!-- header desktop -->
+      <div class="logo hidden-md hidden-sm hidden-xs">
+        <a href="#!" data-target="#myCarousel" data-slide-to="0"><img src="img/neumerlin_logo.png"></a>
+      </div>
+
+
+      <!-- header mobile -->
+      <div class="visible-md visible-sm visible-xs header_mobile">
+        <div class="mobile_header_wrapper">
+          <div class="mobile_logo">
+            <a href="index.html"><img src="img/neumerlin_logo.png"></a>
+          </div>
+          <!-- <div class="mobile_menu" onclick="location.href='index.html';"> -->
+          <div class="mobile_menu" onclick="m_menu();">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+          </div>
+        </div>
+      </div>
+      <!-- end header mobile -->
+
+
+      <!-- m_menu_wrapper -->
+      <div class="m_menu_wrapper visible-sm visible-xs" id="m_menu_wrapper">
+          <ul>
+            <li><a href="#myCarousel" data-target="#myCarousel" data-slide-to="1">Subsidiary Company</a></li>
+            <li><a href="#myCarousel" data-target="#myCarousel" data-slide-to="2">Our Value</a></li>
+            <li><a href="#myCarousel" data-target="#myCarousel" data-slide-to="3">Career</a></li>
+            <li><a href="#myCarousel" data-target="#myCarousel" data-slide-to="4">Contact</a></li>
+          </ul>
+      </div>
+      <!-- end m_menu_wrapper -->
+
+
+      <script>
+      function m_menu() {
+          var menu = document.getElementById("m_menu_wrapper");
+          menu.classList.toggle("active");
+
+          // close mobile menu
+          $('.m_menu_wrapper a').click(function(){
+            $('.m_menu_wrapper').removeClass("active");
+          });
+
+
+      }
+      </script>
+
+
+
+
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+
+          <!-- main_index -->
+          <div class="item active main_index" id="ca1">
+            <div class="white_line"></div>
+
+            <script type="text/javascript">
+              $(document).ready(function(){
+                $('.white_line').addClass('fade_in');
+
+                window.setTimeout(function(){
+                    $('.white_line').removeClass('fade_in');
+                    $('.white_line').addClass('fade_out');
+                }, 3000);
+
+
+                window.setTimeout(function(){
+                    $('.description_box').addClass('fade_in');
+                }, 1500);
+
+                window.setTimeout(function(){
+                    $('.description_box h1').addClass('fade_in');
+                }, 2000);
+
+                window.setTimeout(function(){
+                    $('.description_box p').addClass('fade_in');
+                }, 3000);
+
+              });
+            </script>
+
+
+
+            <div class="description_box">
+              <div class="description_wrapper">
+                <h1>Our <span class="medium">Communication</span> Network</h1>
+                <p>NeuMerlin Group is an Asia Pacific based communication services network. 
+Our subsidiary companies provide branding, new product development, strategic planning, 
+media planning, creative advertising design, TV commercial, in-store communication, 
+direct and promotional marketing, and digital &amp; interactive communication 
+services to clients throughout Asia Pacific region in various industries.</p>
+<p>As a holding company, NeuMerlin Group manages a portfolio of service companies 
+in particular fields of specialities.</p>
+              </div>
+
+              <!-- Mobile view -->
+              <div class="visible-md visible-sm visible-xs btn_slide">
+                <a href="#myCarousel" data-slide="next">
+                  <p class="bounce">SLIDE <i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></p>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <!-- end main_index -->
+
+
+          <!-- subsidiary -->
+          <div class="item subsidiary" id="ca2">
+            
+            <section class="sub_company">
+              <div class="stage">
+
+                <div class="element neumerlin">
+                  <div class="com_logo_wrapper hide_open">
+                    <div class="com_neumerlin_logo"></div>
+                    <div class="neumerlin_line"></div>
+                    <div class="com_readmore">
+                      <div class="circle">
+                        <img src="img/company/plus.png">
+                      </div>
+                      <p>Readmore</p>
+                    </div>
+                  </div>
+                  
+
+                  <a class="btn_close close_com">
+                    <!-- <i class="fa fa-times fa-2x" aria-hidden="true"></i> -->
+                    <img src="img/close_icon.png">
+                  </a>
+
+                  <!-- company detail -->
+                  <div class="company_detail_wrapper">
+                    <div class="company_logo neumerlin">
+                      <!-- <img src="img/company/com_salad_logo.png"> -->
+                      <img src="img/company/slide_neumerlin_hover.png">
+                    </div>
+
+                    <div class="company_img">
+                      <img src="img/company/com_salad_img.jpg">
+                      <button class="see_more_wrapper bounce" id="btn_seemore_neu">
+                        <i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i>
+                        <p>Scroller</p>
+                        <p>to see more</p>
+                      </button>
+                    </div>
+
+                    <div class="company_desc" id="seemore_neu">
+                      <h2>Make it <span>fresh</span> to serve!</h2>
+                      <p>Consumers experience brands through execution. Regardless of what type of media you are advertising, 
+design plays a great deal in bringing the desired experience of your brand initiative into action. 
+Make it fresh to serve!</p>
+                      <div class="button_wrapper">
+                        <button type="button" class="btn_transparent btn_visit_website">Visit Website</button>
+                      </div>
+                    </div>
+
+                    <div class="company_footer">
+                      <p><img src="img/email_icon.png"><a href="mailto:contact@neumerlin.com">contact@neumerlin.com</a></p>
+
+                      <p><img src="img/call_icon.png"><a href="tel:+66 2618 3155, 3166">+66 2618 3155, 3166</a></p>
+
+                      <p><img src="img/fax_icon.png"><a href="tel:+66 2618 3177">+66 2618 3177</a></p>
+
+                      <div class="button_wrapper">
+                        <button type="button" class="btn_transparent btn_com_apply" data-target="#myCarousel" data-slide-to="3">Job Application</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end company detail -->
+                </div>
+
+                <div class="element salad">
+                  <div class="com_logo_wrapper hide_open">
+                    <div class="com_salad_logo"></div>
+                    <div class="salad_line"></div>
+                    <div class="com_readmore">
+                      <div class="circle">
+                        <img src="img/company/plus.png">
+                      </div>
+                      <p>Readmore</p>
+                    </div>
+                  </div>
+
+                  <a class="btn_close close_com">
+                    <!-- <i class="fa fa-times fa-2x" aria-hidden="true"></i> -->
+                    <img src="img/close_icon.png">
+                  </a>
+
+                  <!-- company detail -->
+                  <div class="company_detail_wrapper">
+                    <div class="company_logo salad">
+                      <!-- <img src="img/company/com_salad_logo.png"> -->
+                      <img src="img/company/slide_salad_hover.png">
+                    </div>
+
+                    <div class="company_img">
+                      <img src="img/company/com_salad_img.jpg">
+                      <button class="see_more_wrapper bounce" id="btn_seemore_salad">
+                        <i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i>
+                        <p>Scroller</p>
+                        <p>to see more</p>
+                      </button>
+                    </div>
+
+                    <div class="company_desc" id="seemore_salad">
+                      <h2>Make it <span>fresh</span> to serve!</h2>
+                      <p>Consumers experience brands through execution. Regardless of what type of media you are advertising, 
+design plays a great deal in bringing the desired experience of your brand initiative into action. 
+Make it fresh to serve!</p>
+                      <div class="button_wrapper">
+                        <button type="button" class="btn_transparent btn_visit_website">Visit Website</button>
+                      </div>
+                    </div>
+
+                    <div class="company_footer">
+                      <p><img src="img/email_icon.png"><a href="mailto:contact@neumerlin.com">contact@neumerlin.com</a></p>
+
+                      <p><img src="img/call_icon.png"><a href="tel:+66 2618 3155, 3166">+66 2618 3155, 3166</a></p>
+
+                      <p><img src="img/fax_icon.png"><a href="tel:+66 2618 3177">+66 2618 3177</a></p>
+
+                      <div class="button_wrapper">
+                        <button type="button" class="btn_transparent btn_com_apply" data-target="#myCarousel" data-slide-to="3">Job Application</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end company detail -->
+                </div>
+
+                <div class="element virt">
+                  <div class="com_logo_wrapper hide_open">
+                    <div class="com_virt_logo"></div>
+                    <div class="virt_line"></div>
+                    <div class="com_readmore">
+                      <div class="circle">
+                        <img src="img/company/plus.png">
+                      </div>
+                      <p>Readmore</p>
+                    </div>
+                  </div>
+
+                  <a class="btn_close close_com">
+                    <!-- <i class="fa fa-times fa-2x" aria-hidden="true"></i> -->
+                    <img src="img/close_icon.png">
+                  </a>
+
+                  <!-- company detail -->
+                  <div class="company_detail_wrapper">
+                    <div class="company_logo virt">
+                      <img src="img/company/slide_virt_hover.png">
+                    </div>
+
+                    <div class="company_img">
+                      <img src="img/company/com_salad_img.jpg">
+                      <button class="see_more_wrapper bounce" id="btn_seemore_virt">
+                        <i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i>
+                        <p>Scroller</p>
+                        <p>to see more</p>
+                      </button>
+                    </div>
+
+                    <div class="company_desc" id="seemore_virt">
+                      <h2>Make it <span>fresh</span> to serve!</h2>
+                      <p>Consumers experience brands through execution. Regardless of what type of media you are advertising, 
+design plays a great deal in bringing the desired experience of your brand initiative into action. 
+Make it fresh to serve!</p>
+                      <div class="button_wrapper">
+                        <button type="button" class="btn_transparent btn_visit_website">Visit Website</button>
+                      </div>
+                    </div>
+
+                    <div class="company_footer">
+                      <p><img src="img/email_icon.png"><a href="mailto:contact@neumerlin.com">contact@neumerlin.com</a></p>
+
+                      <p><img src="img/call_icon.png"><a href="tel:+66 2618 3155, 3166">+66 2618 3155, 3166</a></p>
+
+                      <p><img src="img/fax_icon.png"><a href="tel:+66 2618 3177">+66 2618 3177</a></p>
+
+                      <div class="button_wrapper">
+                        <button type="button" class="btn_transparent btn_com_apply" data-target="#myCarousel" data-slide-to="3">Job Application</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end company detail -->
+                </div>
+
+                <div class="element brandone">
+                  <div class="com_logo_wrapper hide_open">
+                    <div class="com_brandone_logo"></div>
+                    <div class="brandone_line"></div>
+                    <div class="com_readmore">
+                      <div class="circle">
+                        <img src="img/company/plus.png">
+                      </div>
+                      <p>Readmore</p>
+                    </div>
+                  </div>
+
+
+                  <a class="btn_close close_com">
+                    <!-- <i class="fa fa-times fa-2x" aria-hidden="true"></i> -->
+                    <img src="img/close_icon.png">
+                  </a>
+
+                  <!-- company detail -->
+                  <div class="company_detail_wrapper">
+                    <div class="company_logo brandone">
+                      <!-- <img src="img/company/slide_brandone_hover.png"> -->
+                      <img src="img/company/slide_rocket_hover.png">
+                    </div>
+
+                    <div class="company_img">
+                      <img src="img/company/com_salad_img.jpg">
+                      <button class="see_more_wrapper bounce" id="btn_seemore_brandone">
+                        <i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i>
+                        <p>Scroller</p>
+                        <p>to see more</p>
+                      </button>
+                    </div>
+
+                    <div class="company_desc" id="seemore_brandone">
+                      <h2>Make it <span>fresh</span> to serve!</h2>
+                      <p>Consumers experience brands through execution. Regardless of what type of media you are advertising, 
+design plays a great deal in bringing the desired experience of your brand initiative into action. 
+Make it fresh to serve!</p>
+                      <div class="button_wrapper">
+                        <button type="button" class="btn_transparent btn_visit_website">Visit Website</button>
+                      </div>
+                    </div>
+
+                    <div class="company_footer">
+                      <p><img src="img/email_icon.png"><a href="mailto:contact@neumerlin.com">contact@neumerlin.com</a></p>
+
+                      <p><img src="img/call_icon.png"><a href="tel:+66 2618 3155, 3166">+66 2618 3155, 3166</a></p>
+
+                      <p><img src="img/fax_icon.png"><a href="tel:+66 2618 3177">+66 2618 3177</a></p>
+
+                      <div class="button_wrapper">
+                        <button type="button" class="btn_transparent btn_com_apply" data-target="#myCarousel" data-slide-to="3">Job Application</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end company detail -->
+                </div>
+
+              </div>
+            </section>
+
+          </div>
+          <!-- end subsidiary -->
+
+
+          <script type="text/javascript">
+            $(document).on("click", ".btn_close", function() {
+              $(".element").removeClass('active');
+              $('.stage').children('.element').not('.active').removeClass('inactive');
+              $('.stage').children('.element').children('.hide_open').css('display','block');
+              $('.stage').children('.element').children('.btn_close').css('display','none');
+              $('.stage').children('.element').children('.company_detail_wrapper').css('display','none');
+
+              // console.log(this);
+            });
+
+
+            $('.element').each(function() {
+
+                $(this).click(function() {
+                  $(this).addClass('active');
+                  $('.stage').children('.element').not('.active').addClass('inactive');
+                  $(this).children('.hide_open').css('display','none');
+                  $(this).children('.btn_close').css('display','block');
+                  $(this).children('.company_detail_wrapper').css('display','block');
+
+
+                  // close                 
+
+
+                });
+
+                
+
+
+            });
+
+
+          </script>
+        
+
+          <!-- our value -->
+          <div class="item our_value" id="ca3">
+            <div class="our_value_wrapper">
+              <div class="our_value_image">
+                <div class="value_image">
+                  <!-- <div class="white_line"></div> -->
+                </div>
+              </div>
+
+              <!-- our_value_detail -->
+              <div class="our_value_detail">
+                <div class="our_value_description">
+                  <div class="description">
+                    <h1>Our <span class="medium">Value</span></h1>
+
+                    <p>Our core value is “CREATIFICIENCY” that roots deep in our working philosophy and 
+  vision of our brands. This value is attributed from enhanced working ecology with 
+  multidisciplinary team formation. We always consider things in a holistic view, 
+  balancing between rationale and creativity to maximize CREATIFICIENCY that 
+  translates to unique qualities in our works of each speciality.</p>
+
+                    <p>We are mindful at microscopic level yet focusing on delivering an integrated solution 
+  as a whole. The goal is to transform any ideation to implementation that meets all given 
+  objectives. By simply saying solution, we mean a solution that has been derived from 
+  a well-thought-through thinking process and can be executed holistically, aesthetically, 
+  and meaningfully.</p>
+
+                    <p>Providing good services seems to be too stereotypical! Here, we strive for greatness. 
+  We try hard not to over-promise, yet try harder to over-deliver. We would rather 
+  concentrate on the end result at which the true performance is measured. 
+  Understanding what is Good, is a foundation of what is Great. From that, tremendous 
+  creative efforts are put in to bring good work to greatness.</p>
+                  </div>
+                </div>
+
+                <div class="our_partner_wrapper">
+                  <div class="our_partner">
+                    <h1>Our <span class="medium">Partner</span></h1>
+
+                    <ul>
+                      <li><a href="#!"><img src="img/partner1.png"></a></li>
+                      <li><a href="#!"><img src="img/partner2.png"></a></li>
+                      <li><a href="#!"><img src="img/partner3.png"></a></li>
+                      <li><a href="#!"><img src="img/partner4.png"></a></li>
+                      <li><a href="#!"><img src="img/partner5.png"></a></li>
+                      <li><a href="#!"><img src="img/partner6.png"></a></li>
+                      <li><a href="#!"><img src="img/partner7.png"></a></li>
+                      <li><a href="#!"><img src="img/partner8.png"></a></li>
+                      <li><a href="#!"><img src="img/partner9.png"></a></li>
+                      <li><a href="#!"><img src="img/partner10.png"></a></li>
+
+
+                      <li><a href="#!"><img src="img/partner11.png"></a></li>
+                      <li><a href="#!"><img src="img/partner12.png"></a></li>
+                      <li><a href="#!"><img src="img/partner13.png"></a></li>
+                      <li><a href="#!"><img src="img/partner14.png"></a></li>
+                      <li><a href="#!"><img src="img/partner15.png"></a></li>
+                      <li><a href="#!"><img src="img/partner16.png"></a></li>
+                      <li><a href="#!"><img src="img/partner17.png"></a></li>
+                      <li><a href="#!"><img src="img/partner18.png"></a></li>
+                      <li><a href="#!"><img src="img/partner19.png"></a></li>
+                      <li><a href="#!"><img src="img/partner20.png"></a></li>
+
+
+                      <li><a href="#!"><img src="img/partner21.png"></a></li>
+                      <li><a href="#!"><img src="img/partner22.png"></a></li>
+                      <li><a href="#!"><img src="img/partner23.png"></a></li>
+                      <li><a href="#!"><img src="img/partner24.png"></a></li>
+                      <li><a href="#!"><img src="img/partner25.png"></a></li>
+                      <li><a href="#!"><img src="img/partner26.png"></a></li>
+                      <li><a href="#!"><img src="img/partner27.png"></a></li>
+                      <li><a href="#!"><img src="img/partner28.png"></a></li>
+                      <li><a href="#!"><img src="img/partner29.png"></a></li>
+                      <li><a href="#!"><img src="img/partner30.png"></a></li>
+
+                      <li><a href="#!"><img src="img/partner31.png"></a></li>
+                      <li><a href="#!"><img src="img/partner32.png"></a></li>
+                      <li><a href="#!"><img src="img/partner33.png"></a></li>
+                      <li><a href="#!"><img src="img/partner34.png"></a></li>
+                      <li><a href="#!"><img src="img/partner35.png"></a></li>
+                      <li><a href="#!"><img src="img/partner36.png"></a></li>
+                      <li><a href="#!"><img src="img/partner37.png"></a></li>
+                      <li><a href="#!"><img src="img/partner38.png"></a></li>
+                      <li><a href="#!"><img src="img/partner39.png"></a></li>
+                      <li><a href="#!"><img src="img/partner40.png"></a></li>
+
+                      <li><a href="#!"><img src="img/partner41.png"></a></li>
+                      <li><a href="#!"><img src="img/partner42.png"></a></li>
+                      <li><a href="#!"><img src="img/partner43.png"></a></li>
+                      <li><a href="#!"><img src="img/partner44.png"></a></li>
+
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- end our_value_detail -->
+
+
+            </div>
+          </div>
+          <!-- end our value -->
+
+          <!-- career -->
+          <div class="item joinus" id="ca4">
+
+            <!-- initial display -->
+            <div class="joinus_wrapper">
+              <div class="join_our_team">
+                <div class="team_detail">
+                  <h1>Join Our <span class="medium">Team</span></h1>
+
+                  <p>We strongly believe that none of us is as better than all of us. 
+Being experts in our field of work, we are a creative team of designers, writers, 
+digital directors, and visualizers. Join us and discover more.</p>
+
+                  <div class="team_slide">
+                    <!-- Set up your HTML -->
+                    <div class="owl-carousel owl-theme">
+                      <div><img src="img/team/team_image.jpg"></div>
+                      <div><img src="img/team/team_image.jpg"></div>
+                      <div><img src="img/team/team_image.jpg"></div>
+                    </div>
+
+                      <div class="owl-controls">
+                          <div id="customNav" class="owl-nav"></div>
+                          <div id="customDots" class="owl-dots"></div>
+                      </div>
+
+                  </div>
+
+                  <script type="text/javascript">
+                    $(document).ready(function(){
+                      $('.owl-carousel').owlCarousel({
+                          autoplay:true,
+                          loop:true,
+                          items: 1,
+                          margin:0,
+                          nav:false,
+                          mouseDrag: false,
+                          touchDrag: false,
+                          animateOut: 'slideOutLeft',
+                          animateIn: 'slideInRight',
+
+                          responsive : {
+                              1280 : {
+                                  animateOut: 'slideOutUp',
+                                  animateIn: 'slideInUp',
+                              }
+                          }
+
+                      })
+                    });
+                  </script>
+
+                </div>
+              </div>
+              <div class="company_wrapper">
+                <div class="company_detail">
+
+                  <div class="company">
+                    <div class="left">
+                      <div class="com_icon" id="neumerlin">
+                        <div class="overlay"></div>
+                        <img src="img/neumerlin_icon.png">
+                      </div>
+                    </div>
+                    <div class="right">
+                      <div class="com_icon" id="salad">
+                        <div class="overlay"></div>
+                        <img src="img/salad_icon.png">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="company second">
+                    <div class="left">
+                      <div class="com_icon" id="virt">
+                        <div class="overlay"></div>
+                        <img src="img/virt_icon.png">
+                      </div>
+                    </div>
+                    <div class="right">
+                      <div class="com_icon" id="brandone">
+                        <div class="overlay"></div>
+                        <img src="img/rocket_icon.png">
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <!-- Neumerlin -->
+                  <section class="vacancy_wrapper neumerlin_vacancy">
+                    <div class="job_vacancy">
+                      <a class="btn_close">
+                        <!-- <i class="fa fa-times fa-2x" aria-hidden="true"></i> -->
+                        <img src="img/close_icon.png">
+                      </a>
+                      <div class="header">
+                        <img src="img/neumerlin_icon.png">
+                      </div>
+                      <ul class="vacancy_list">
+                        <li><a>Marketing</a></li>
+                        <li><a>Planer</a></li>
+                        <li><a class= "job_detail" id="job_detail">Creative - Copy Writer</a></li>
+                        <li><a>Account Manager</a></li>
+                        <li><a>Account Exclusive</a></li>
+                        <li><a>Account Exclusive</a></li>
+                      </ul>
+                    </div>
+                  </section>
+
+                  <!-- Salad -->
+                  <section class="vacancy_wrapper salad_vacancy">
+                    <div class="job_vacancy">
+                      <a class="btn_close">
+                        <!-- <i class="fa fa-times fa-2x" aria-hidden="true"></i> -->
+                        <img src="img/close_icon.png">
+                      </a>
+                      <div class="header">
+                        <img src="img/salad_icon.png">
+                      </div>
+                      <ul class="vacancy_list">
+                        <li><a>Marketing</a></li>
+                        <li><a>Planer</a></li>
+                        <li><a>Creative - Copy Writer</a></li>
+                        <li><a>Account Manager</a></li>
+                        <li><a>Account Exclusive</a></li>
+                        <li><a>Account Exclusive</a></li>
+                      </ul>
+                    </div>
+                  </section>
+
+                  <!-- Virt -->
+                  <section class="vacancy_wrapper virt_vacancy">
+                    <div class="job_vacancy">
+                      <a class="btn_close">
+                        <!-- <i class="fa fa-times fa-2x" aria-hidden="true"></i> -->
+                        <img src="img/close_icon.png">
+                      </a>
+                      <div class="header">
+                        <img src="img/virt_icon.png">
+                      </div>
+                      <ul class="vacancy_list">
+                        <li><a>Marketing</a></li>
+                        <li><a>Planer</a></li>
+                        <li><a>Creative - Copy Writer</a></li>
+                        <li><a>Account Manager</a></li>
+                        <li><a>Account Exclusive</a></li>
+                        <li><a>Account Exclusive</a></li>
+                      </ul>
+                    </div>
+                  </section>
+
+                  <!-- Brandone -->
+                  <section class="vacancy_wrapper brandone_vacancy">
+                    <div class="job_vacancy">
+                      <a class="btn_close">
+                        <!-- <i class="fa fa-times fa-2x" aria-hidden="true"></i> -->
+                        <img src="img/close_icon.png">
+                      </a>
+                      <div class="header">
+                        <img src="img/rocket_icon.png">
+                      </div>
+                      <ul class="vacancy_list">
+                        <li><a>Marketing</a></li>
+                        <li><a>Planer</a></li>
+                        <li><a>Creative - Copy Writer</a></li>
+                        <li><a>Account Manager</a></li>
+                        <li><a>Account Exclusive</a></li>
+                        <li><a>Account Exclusive</a></li>
+                      </ul>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <!-- end initial display -->
+
+
+            <!-- Job vacancy section -->
+            <div class="job_section">
+              <div class="job_name_wrapper">
+                <div class="job_name">
+                  <h1>Creative<br><span class="medium">Copy Writer</span></h1>
+
+                  <div class="job_company_logo">
+                    <img src="img/neumerlin_icon.png">
+                  </div>
+
+                  <div class="applying_step" id="applying_step" style="margin-top: 60px;">
+                    <ul>
+                      <li><span><i class="fa fa-circle" aria-hidden="true"></i></span></li>
+                      <li class="active"><span>1</span></li>
+                      <li><span>2</span></li>
+                      <li><span>3</span></li>
+                      <li><span><i class="fa fa-circle" aria-hidden="true"></i></span></li>
+                    </ul>
+                  </div>
+
+                  <div class="button_wrapper">
+                    <button type="button" class="btn_transparent btn_apply" id="apply" style="margin-top: 90px;">Apply now</button>
+                  </div>
+
+                  <div class="button_wrapper btn_back_wrapper hidden-sm hidden-xs">
+                    <button type="button" class="btn_blue btn_back back" id="back"><i class="fa fa-angle-left fa-2x"></i>Back</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- job_desc_wrapper -->
+              <div class="job_desc_wrapper">
+                <div class="job_desc">
+                  <strong>Responsibilities :</strong>
+                  <ul class="qualification_list" style="margin-bottom: 30px;">
+                    <li>Join the Fitting Test</li>
+                    <li>Coordinate with sample line</li>
+                    <li>Other task assign by a commander</li>
+                    <li>Prepare design and sketch design</li>
+                    <li>Make mock-up or prototype sample</li>
+                    <li>Presentation of new project</li>
+                    <li>Provide new material, example fabric, lace and accessories</li>
+                    <li>Prepare the report for new development material.</li>
+                    <li>Coordinate with purchasing department to provide material</li>
+                  </ul>
+
+                  <strong>Qualification :</strong>
+                  <ul class="qualification_list">
+                    <li>Bachelor's degree or equivalent</li>
+                    <li>At least 5 years in underwear and textile business</li>
+                    <li>Skills, Competency Need</li>
+                    <li>Be able to use Microsoft office program</li>
+                    <li>Be able to use computer program such as Gerber or Lectra system</li>
+                    <li>There is cognition in underwear sewing process</li>
+                    <li>There is cognition in pattern making</li>
+                  </ul>
+
+                  <div class="button_wrapper btn_back_wrapper visible-sm visible-xs" style="margin-top: 30px;">
+                    <button type="button" class="btn_blue btn_back back" id="back"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>Back</button>
+                  </div>
+
+                </div>
+              </div>
+              <!-- end job_desc_wrapper -->
+
+              <!-- application_form_wrapper -->
+              <div class="application_form_wrapper">
+                <div class="application_form">
+                  <form>
+
+                    <!-- Section 1 -->
+                    <section style="display: none;" id="section1">
+                      
+                      <!-- Job position -->
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <h2>ตำแหน่งงาน<label>กรุณากรอกข้อมูลในช่องที่มีเครื่องหมาย <span style="color: #ff0000;">*</span> กำกับอยู่ให้ครบถ้วน</label></h2>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>ตำแหน่งที่สมัคร ลำดับที่ 1</label>
+                          <input type="text" name="position1" value="บริษัท นิวเมอร์ลิน จำกัด" disabled="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>Division ลำดับที่ 1</label>
+                          <input type="text" name="division1" value="Creative - Copy Writer" disabled="">
+                        </div>
+                      </div>
+
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>ตำแหน่งที่สมัคร ลำดับที่ 2 (ถ้ามี)</label>
+                          <select name="division2">
+                            <option>- กรุณาเลือก -</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <label>เงินเดือนที่คาดหวัง <span style="color: #ff0000;">*</span></label>
+                          <input type="number" name="salary" value="">
+                        </div>
+                        <div class="col-lg-5">
+                          <label>วันที่สามารถทำงานได้ <span style="color: #ff0000;">*</span></label>
+                          <input type="date" name="date">
+                        </div>
+                      </div>
+
+                      <!-- <div class="button_wrapper" style="text-align: center; margin-top: 15px;">
+                        <button type="button" class="btn_transparent btn_addmore" id="addmore_position">
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>เพิ่มตำแหน่งงานที่ต้องการสมัคร</button>
+                      </div> -->
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="checkbox">
+                            <input type="checkbox" name="other_position">
+                            <label>มีความประสงค์ให้บริษัทพิจารณาตำแหน่งอื่นที่เหมาะสม</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Persenal detail -->
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <h2>ข้อมูลส่วนตัว</h2>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>ชื่อ - นามสกุล <span style="color: #ff0000;">*</span></label>
+                          <input type="text" name="name" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <label>ชื่อเล่น</label>
+                          <input type="text" name="nickname" value="">
+                        </div>
+                        <div class="col-lg-5">
+                          <label>วัน - เดือน - ปีเกิด <span style="color: #ff0000;">*</span></label>
+                          <input type="date" name="dob" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>ที่อยู่ปัจจุบัน <span style="color: #ff0000;">*</span></label>
+                          <input type="text" name="address" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <label>จังหวัด <span style="color: #ff0000;">*</span></label>
+                          <select name="province">
+                            <option>- กรุณาเลือก -</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                          </select>
+                        </div>
+                        <div class="col-lg-6">
+                          <label>อำเภอ / เขต <span style="color: #ff0000;">*</span></label>
+                          <select name="district">
+                            <option>- กรุณาเลือก -</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <label>ตำบล / แขวง <span style="color: #ff0000;">*</span></label>
+                          <select name="sub_district">
+                            <option>- กรุณาเลือก -</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                          </select>
+                        </div>
+                        <div class="col-lg-6">
+                          <label>รหัสไปรษณีย์ <span style="color: #ff0000;">*</span></label>
+                          <input type="text" name="postcode" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <label>โทรศัพท์มือถือ <span style="color: #ff0000;">*</span></label>
+                          <input type="tel" name="phone" value="">
+                        </div>
+                        <div class="col-lg-6">
+                          <label>อีเมล์ <span style="color: #ff0000;">*</span></label>
+                          <input type="email" name="email" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <label>เลขที่บัตรประชาชน <span style="color: #ff0000;">*</span></label>
+                          <input type="text" name="id_card" value="">
+                        </div>
+                        <div class="col-lg-5">
+                          <label>วันที่บัตรหมดอายุ <span style="color: #ff0000;">*</span></label>
+                          <input type="date" name="expire_date" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>สถานภาพทางทหาร</label>
+                          <div class="radio">
+                            <input type="radio" name="military">
+                            <label>ผ่านการเกณฑ์ทหาร</label>
+                          </div>
+                          <div class="radio">
+                            <input type="radio" name="military">
+                            <label>อื่นๆ (โปรดระบุ)</label>
+                          </div>
+                          <input type="text" name="military_status" value="">
+                        </div>
+                      </div>
+
+                      <hr>
+
+                      <div class="button_wrapper" style="text-align: center; margin-top: 40px;">
+                        
+                        <button type="button" class="btn_blue btn_prev back visible-sm visible-xs" id="back">ย้อนกลับ</button>
+
+                        <button type="button" class="btn_blue btn_next" id="go_section2">ต่อไป</button>
+                      </div>
+
+                    </section>
+                    <!-- end Section 1 -->
+
+
+                    <!-- Section 2 -->
+                    <section style="display: none;" id="section2">
+                      <!-- Education -->
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <h2>ระดับการศึกษา<label>กรุณากรอกข้อมูลในช่องที่มีเครื่องหมาย <span style="color: #ff0000;">*</span> กำกับอยู่ให้ครบถ้วน</label></h2>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>ระดับการศึกษาที่ 1 <span style="color: #ff0000;">*</span></label>
+                          <select name="degree1">
+                            <option>- กรุณาเลือก -</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>ชื่อสถาบันการศึกษา <span style="color: #ff0000;">*</span></label>
+                          <input type="text" name="edu_place_name" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>วุฒิการศึกษา / สาขา <span style="color: #ff0000;">*</span></label>
+                          <input type="text" name="diploma" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <label>ปีที่สำเร็จ <span style="color: #ff0000;">*</span></label>
+                          <input type="month" name="graduation_year" value="">
+                        </div>
+                        <div class="col-lg-3">
+                          <label>เกรดเฉลี่ย <span style="color: #ff0000;">*</span></label>
+                          <input type="number" name="expire_date" value="">
+                        </div>
+                      </div>
+
+
+                      <div class="button_wrapper" style="text-align: center; margin-top: 15px;">
+                        <button type="button" class="btn_transparent btn_addmore" id="addmore_position">
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>เพิ่มระดับการศึกษาอื่นๆ</button>
+                      </div>
+
+
+                      <!-- Job experience -->
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <h2>ประสบการณ์การทำงาน</h2>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>ชื่อบริษัท</label>
+                          <input type="text" name="company_name" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <label>โทรศัพท์</label>
+                          <input type="tel" name="company_number" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>ตำแหน่ง</label>
+                          <input type="text" name="company_position" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>ลักษณะงาน</label>
+                          <input type="text" name="company_job_desc" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <label>เงินเดือน</label>
+                          <input type="number" name="company_salary" value="">
+                        </div>
+                        <div class="col-lg-6">
+                          <label>ระยะเวลาทำงาน (เดือน/ปี)</label>
+                          <input type="number" name="company_time" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>เหตุผลที่ออก</label>
+                          <input type="text" name="company_reason" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>บุคคลอ้างอิง</label>
+                          <input type="text" name="company_ref" value="">
+                        </div>
+                      </div>
+
+
+                      <div class="button_wrapper" style="text-align: center; margin-top: 15px;">
+                        <button type="button" class="btn_transparent btn_addmore" id="addmore_position">
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>เพิ่มประสบการณ์การทำงานอื่นๆ</button>
+                      </div>
+
+
+                      <!-- Ability -->
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <h2>ความสามารถพิเศษ</h2>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>ภาษาต่างประเทศ </label>
+                          <input type="text" name="language" value="">
+
+                          <div class="skills" id="speaking">
+                            <span>พูด</span>
+                            <div class="skill">
+                              <button type="button" class="btn_grey">ดี</button>
+                            </div>
+                            <div class="skill">
+                              <button type="button" class="btn_grey">ปานกลาง</button>
+                            </div>
+                            <div class="skill">
+                              <button type="button" class="btn_grey">พอใช้</button>
+                            </div>
+                          </div>
+
+                          <div class="skills" id="reading">
+                            <span>อ่าน</span>
+                            <div class="skill">
+                              <button type="button" class="btn_grey">ดี</button>
+                            </div>
+                            <div class="skill">
+                              <button type="button" class="btn_grey">ปานกลาง</button>
+                            </div>
+                            <div class="skill">
+                              <button type="button" class="btn_grey">พอใช้</button>
+                            </div>
+                          </div>
+
+                          <div class="skills" id="writing">
+                            <span>เขียน</span>
+                            <div class="skill">
+                              <button type="button" class="btn_grey">ดี</button>
+                            </div>
+                            <div class="skill">
+                              <button type="button" class="btn_grey">ปานกลาง</button>
+                            </div>
+                            <div class="skill">
+                              <button type="button" class="btn_grey">พอใช้</button>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+
+                      <!-- Highlight Skill Button -->
+                      <script type="text/javascript">
+                        // Speaking
+                        $("#speaking button").click(function() {  
+                          $("#speaking button").removeClass("active");
+                          $(this).addClass("active");
+                        });
+
+                        // Reading
+                        $("#reading button").click(function() {  
+                          $("#reading button").removeClass("active");
+                          $(this).addClass("active");
+                        });
+
+                        // Writing
+                        $("#writing button").click(function() {  
+                          $("#writing button").removeClass("active");
+                          $(this).addClass("active");
+                        });
+                      </script>
+
+
+                      <div class="button_wrapper" style="text-align: center; margin-top: 15px;">
+                        <button type="button" class="btn_transparent btn_addmore" id="addmore_position">
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>เพิ่มความสามารถทางภาษาอื่นๆ</button>
+                      </div>
+
+
+                      <div class="row" style="margin-top: 30px;">
+                        <div class="col-lg-12">
+                          <label>โปรแกรมคอมพิวเตอร์ <span style="color: #ff0000;">*</span></label>
+                          <input type="text" name="program" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>งานอดิเรก / สิ่งที่ชอบ</label>
+                          <input type="text" name="hobby" value="">
+                        </div>
+                      </div>
+
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <h2>การฝึกอบรม</h2>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>หลักสูตร</label>
+                          <input type="text" name="course" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>สถาบัน</label>
+                          <input type="text" name="institute" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>ระยะเวลาฝึกอบรม (ชั่วโมง/วันเ/เดือน/ปี)</label>
+                          <input type="text" name="duration" value="">
+                        </div>
+                      </div>
+
+
+                      <div class="button_wrapper" style="text-align: center; margin-top: 15px;">
+                        <button type="button" class="btn_transparent btn_addmore" id="addmore_position">
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>เพิ่มการฝึกอบรมอื่นๆ</button>
+                      </div>
+
+                      <hr>
+
+                      <div class="button_wrapper" style="text-align: center; margin-top: 40px;">
+                        <button type="button" class="btn_blue btn_prev" id="backto_section1">ย้อนกลับ</button>
+                        <button type="button" class="btn_blue btn_next" id="go_section3">ต่อไป</button>
+                      </div>
+
+                    </section>
+                    <!-- end Section 2 -->
+
+
+                    <!-- Section 3 -->
+                    <section style="display: none;" id="section3">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <h2>ข้อมูลอื่นๆ<label>กรุณากรอกข้อมูลในช่องที่มีเครื่องหมาย <span style="color: #ff0000;">*</span> กำกับอยู่ให้ครบถ้วน</label></h2>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>บุคคลที่สามารถติดต่อได้ในกรณีฉุกเฉิน<br>
+ชื่อ - นามสกุล <span style="color: #ff0000;">*</span></label>
+                          <input type="text" name="em_name" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <label>โทรศัพท์ <span style="color: #ff0000;">*</span></label>
+                          <input type="tel" name="em_number" value="">
+                        </div>
+                        <div class="col-lg-6">
+                          <label>ความสัมพันธ์ <span style="color: #ff0000;">*</span></label>
+                          <input type="text" name="em_relationship" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>ทราบข่าวการรับสมัครจาก ?</label>
+                          <input type="text" name="advertising" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>ทราบข่าวการรับสมัครจาก ?</label>
+                          <input type="text" name="advertising" value="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>ภาพถ่ายหน้าตรง (ไฟล์นามสกุล gif, jpg, png ขนาดไฟล์ไม่เกิน 1 เมกะไบต์)</label>
+                          <button type="button" class="btn_file btn_file" style="margin-bottom: 20px;">เลือกไฟล์</button>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>ไฟล์ประวัติ (ไฟล์นามสกุล pdf, doc, docx ขนาดไฟล์ไม่เกิน 10 เมกะไบต์)</label>
+                          <button type="button" class="btn_file btn_file" style="margin-bottom: 20px;">เลือกไฟล์</button>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>ไฟล์ผลงาน (ถ้ามี) (ไฟล์นามสกุล pdf, doc, docx ขนาดไฟล์ไม่เกิน 10 เมกะไบต์)</label>
+                          <button type="button" class="btn_file btn_file" style="margin-bottom: 20px;">เลือกไฟล์</button>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <label>เเนบลิงค์ผลงาน (ถ้ามี)</label>
+                          <input type="text" name="portfolio_link" value="">
+                        </div>
+                      </div>
+
+                      <hr>
+
+                      <div class="confirm_wrapper">
+                        <div class="radio">
+                          <input type="radio" name="confirm">
+                          <label>ข้าพเจ้าขอรับรองว่าข้อความในใบสมัครนี้เป็นความจริงทุกประการ</label>
+                        </div>
+
+                        <div class="captcha">
+                          <div class="g-recaptcha" data-sitekey="6LeQFkIUAAAAAIXZlEPnxuC65laVDcNlW4lFHdsr"></div>
+                        </div>
+                      </div>
+
+                      <hr>
+
+                      <div class="button_wrapper" style="text-align: center; margin-top: 40px;">
+                        <button type="button" class="btn_blue btn_prev" id="backto_section2">ย้อนกลับ</button>
+                        <button type="button" class="btn_blue btn_next" id="go_section4">ยืนยัน</button>
+                      </div>
+
+                    </section>
+                    <!-- end Section 3 -->
+
+
+                    <!-- Section 4 -->
+                    <section id="section4" style="display: none;">
+                      <div class="form_complete">
+                        <h2>เสร็จสิ้น</h2>
+                        <p class="light">ข้อมูลการสมัครงานของคุณได้ถูกส่งไปยังฝ่ายบุคคลเรียบร้อยแล้ว<br>
+หวังเป็นอย่างยิ่งว่าจะได้ร่วมงานกันในอนาคต</p>
+                      </div>
+                      <div class="button_wrapper" style="text-align: center; margin-top: 40px;">
+                        <button type="button" class="btn_blue btn_next" id="back_main">กลับไปหน้าหลัก</button>
+                      </div>
+                    </section>
+                    <!-- end Section 4 -->
+
+
+
+
+
+                  </form>
+                </div>
+              </div>
+              <!-- end application_form_wrapper -->
+
+
+
+
+            </div>
+            <!-- end Job vacancy section -->
+
+
+
+
+          </div>
+          <!-- end career -->
+
+
+          <!-- Company Job Vacancy -->
+          <script type="text/javascript">
+            $("#neumerlin").click(function(){
+                $('.neumerlin_vacancy').addClass('active');
+            });
+
+            $("#salad").click(function(){
+                $('.salad_vacancy').addClass('active');
+            });
+
+            $("#virt").click(function(){
+                $('.virt_vacancy').addClass('active');
+            });
+
+            $("#brandone").click(function(){
+                $('.brandone_vacancy').addClass('active');
+            });
+
+
+            $(".btn_close").click(function(){
+              $('.vacancy_wrapper').removeClass('active');
+            });
+          </script>
+
+          <!-- Job Vacancy Description -->
+          <script type="text/javascript">
+            $(".job_detail").click(function(){
+              $('.job_section').addClass('active');
+            });
+
+            $(".back").click(function(){
+              $('.job_section').removeClass('active');
+              $('#apply').css('display','block');
+              $('#applying_step').removeClass('active');
+              $('.job_desc_wrapper').css('display','block');
+
+              // hide all section
+              $('#section1').css('display','none');
+              $('#section2').css('display','none');
+              $('#section3').css('display','none');
+              $('#section4').css('display','none');
+
+              // Applying step
+              $('.applying_step ul li').removeClass('active');
+              $('.applying_step ul li:nth(1)').addClass('active');
+              $('#applying_step').removeClass('active');
+            });
+          </script>
+
+          <!-- Apply for the job -->
+          <script type="text/javascript">
+            $("#apply").click(function(){
+              $('#apply').css('display','none');
+              $('#applying_step').addClass('active');
+              $('.job_desc_wrapper').css('display','none');
+              $('.application_form_wrapper').css('display','block');            
+
+              // Section 1
+              $('.application_form_wrapper').scrollTop(0);
+              $('#section1').css('display','block');
+            });
+          </script>
+
+          <!-- Go to section (2) -->
+          <script type="text/javascript">
+            $("#go_section2").click(function(){
+              $('#section1').css('display','none');
+              $('#section2').css('display','block');
+              // $('#section2').scrollTop(0);
+              $('.application_form_wrapper').scrollTop(0);
+              $('.applying_step ul li').removeClass('active');
+              $('.applying_step ul li:nth(2)').addClass('active');
+            });
+          </script>
+
+          <!-- Back to section (1) -->
+          <script type="text/javascript">
+            $("#backto_section1").click(function(){
+              $('#section1').css('display','block');
+              $('#section2').css('display','none');
+              $('.application_form_wrapper').scrollTop(0);
+              $('.applying_step ul li').removeClass('active');
+              $('.applying_step ul li:nth(1)').addClass('active');
+            });
+          </script>
+
+          <!-- Go to section (3) -->
+          <script type="text/javascript">
+            $("#go_section3").click(function(){
+              $('#section1').css('display','none');
+              $('#section2').css('display','none');
+              $('#section3').css('display','block');
+              $('.application_form_wrapper').scrollTop(0);
+              $('.applying_step ul li').removeClass('active');
+              $('.applying_step ul li:nth(3)').addClass('active');
+            });
+          </script>
+
+          <!-- Back to section (2) -->
+          <script type="text/javascript">
+            $("#backto_section2").click(function(){
+              $('#section1').css('display','none');
+              $('#section2').css('display','block');
+              $('#section3').css('display','none');
+              $('.application_form_wrapper').scrollTop(0);
+              $('.applying_step ul li').removeClass('active');
+              $('.applying_step ul li:nth(2)').addClass('active');
+            });
+          </script>
+
+          <!-- Go to section (4) -->
+          <script type="text/javascript">
+            $("#go_section4").click(function(){
+              $('#section1').css('display','none');
+              $('#section2').css('display','none');
+              $('#section3').css('display','none');
+              $('#section4').css('display','block');
+              $('.application_form_wrapper').scrollTop(0);
+              $('.applying_step ul li').removeClass('active');
+              $('.applying_step ul li:nth(4)').addClass('active');
+            });
+          </script>
+
+          <!-- Back to section (3) -->
+          <script type="text/javascript">
+            $("#backto_section3").click(function(){
+              $('#section1').css('display','none');
+              $('#section2').css('display','none');
+              $('#section3').css('display','block');
+              $('#section4').css('display','none');
+              $('.application_form_wrapper').scrollTop(0);
+              $('.applying_step ul li').removeClass('active');
+              $('.applying_step ul li:nth(3)').addClass('active');
+            });
+          </script>
+
+          <!-- Back to main button -->
+          <script type="text/javascript">
+            $("#back_main").click(function(){
+              $('.job_section').removeClass('active');
+              $('#apply').css('display','block');
+              $('.job_desc_wrapper').css('display','block');
+
+              // hide all section
+              $('#section1').css('display','none');
+              $('#section2').css('display','none');
+              $('#section3').css('display','none');
+              $('#section4').css('display','none');
+
+              // hide all company
+              $('.neumerlin_vacancy').removeClass('active');
+              $('.salad_vacancy').removeClass('active');
+              $('.virt_vacancy').removeClass('active');
+              $('.brandone_vacancy').removeClass('active');
+
+              // Applying step
+              $('.applying_step ul li').removeClass('active');
+              $('.applying_step ul li:nth(1)').addClass('active');
+              $('#applying_step').removeClass('active');
+            });
+          </script>
+
+          <!-- Reset Scroll Position -->
+          <script type="text/javascript">
+            function resetScrollPos(selector) {
+              var divs = document.querySelectorAll(selector);
+              for (var p = 0; p < divs.length; p++) {
+                if (Boolean(divs[p].style.transform)) { //for IE(10) and firefox
+                  divs[p].style.transform = 'translate3d(0px, 0px, 0px)';
+                } else { //for chrome and safari
+                  divs[p].style['-webkit-transform'] = 'translate3d(0px, 0px, 0px)';
+                }
+              }
+            }
+            resetScrollPos('.mblScrollableViewContainer');
+          </script>
+
+
+
+          <!-- contact -->
+          <div class="item contact" id="ca5">
+            <div class="contact_wrapper">
+              <div class="contact_detail">
+                <div class="detail">
+                  <h1>Contact <span class="medium">Us</span></h1>
+
+                  <address>15 Soi Pradipat 17 Pradipat Rd. Samsean-Nai Phayathai Bangkok 10400 Thailand</address>
+
+                  <p><img src="img/email_icon.png"><a href="mailto:contact@neumerlin.com">contact@neumerlin.com</a></p>
+
+                  <p><img src="img/call_icon.png"><a href="tel:+66 2618 3155, 3166">+66 2618 3155, 3166</a></p>
+
+                  <p><img src="img/fax_icon.png"><a href="tel:+66 2618 3177">+66 2618 3177</a></p>
+
+                  <div class="copy_right">
+                    <p>© All rights reserved. NeuMerlin Company Limited.</p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="contact_form">
+                <form>
+                  <input type="text" name="name" placeholder="Name">
+                  <input type="text" name="company" placeholder="Company">
+                  <input type="email" name="email" placeholder="Email">
+                  <input type="tel" name="phone" placeholder="Tel">
+                  <textarea rows="4" cols="50" name="query" placeholder="Query"></textarea>
+
+                  <div style="text-align: right; margin-top: 10px;">
+                    <button type="submit" class="btn_blue btn_submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- end contact -->
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control hidden-md hidden-sm hidden-xs" href="#myCarousel" data-slide="prev" id="slide_left">
+          <span class="slide_arrow"><img src="img/arrow_left.png"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control hidden-md hidden-sm hidden-xs" href="#myCarousel" data-slide="next" id="slide_right">
+          <span class="slide_arrow"><img src="img/arrow_right.png"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators hidden-md hidden-sm hidden-xs">
+          <li data-target="#myCarousel" data-slide-to="0" class="active" style="display: none;">
+            <p><span>Home</span></p>
+          </li>
+          <li data-target="#myCarousel" data-slide-to="1">
+            <p><span>Subsidiary Company</span></p>
+          </li>
+          <li data-target="#myCarousel" data-slide-to="2">
+            <p><span>Our Value</span></p>
+          </li>
+          <li data-target="#myCarousel" data-slide-to="3">
+            <p><span>Career</span></p>
+          </li>
+          <li data-target="#myCarousel" data-slide-to="4">
+            <p><span>Contact</span></p>
+          </li>
+        </ol>
+
+
+      </div>
+    </div>
+
+
+
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    
+  </body>
+</html>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+    $("#btn_seemore_neu").click(function() {
+      $('.element').animate({
+        scrollTop: $("#seemore_neu").offset().top},
+        'slow');
+    });
+
+    $("#btn_seemore_salad").click(function() {
+      $('.element').animate({
+        scrollTop: $("#seemore_salad").offset().top},
+        'slow');
+    });
+
+    $("#btn_seemore_virt").click(function() {
+      $('.element').animate({
+        scrollTop: $("#seemore_virt").offset().top},
+        'slow');
+    });
+
+    $("#btn_seemore_brandone").click(function() {
+      $('.element').animate({
+        scrollTop: $("#seemore_brandone").offset().top},
+        'slow');
+    });
+
+  });
+</script>
+
+
+
+
+<!-- Track Carousel ID -->
+<script type="text/javascript">
+
+// var timeoutHandle = window.setTimeout(500);
+var timeoutHandle = 500;
+
+// var switchPage = false;
+              
+$('#myCarousel').on('slide.bs.carousel', function (ev) {
+  var id = ev.relatedTarget.id;
+  switch (id) {
+    case "ca1":
+      // Animation
+
+      $('.white_line').addClass('fade_in');
+
+        window.setTimeout(function(){
+            $('.white_line').removeClass('fade_in');
+            $('.white_line').addClass('fade_out');
+        }, 3000); /*3000*/
+
+
+        window.setTimeout(function(){
+            $('.description_box').addClass('fade_in');
+        }, 1500);
+
+        window.setTimeout(function(){
+            $('.description_box h1').addClass('fade_in');
+        }, 2000);
+
+        window.setTimeout(function(){
+            $('.description_box p').addClass('fade_in');
+        }, 3000);
+
+
+      break;
+    case "ca2":
+
+
+      // if (switchPage === false) {
+        // var timeoutHandle = 500;
+        // timeoutHandle = 500;
+        timeoutHandle = 250;
+
+
+        // alert(timeoutHandle);
+        // Line Animation
+        // Neumerlin
+
+        // if (timeoutHandle===500) {
+
+          window.setTimeout(function(){
+          $('.element.neumerlin').addClass('play');
+          }, timeoutHandle); /*500*/
+
+          window.setTimeout(function(){
+            $('.neumerlin_line').addClass('fade_in');
+          }, timeoutHandle*2); /*1000*/
+
+          window.setTimeout(function(){
+            $('.neumerlin_line').removeClass('fade_in');
+            $('.neumerlin_line').addClass('fade_out');
+          }, timeoutHandle*3); /*1500*/
+
+          window.setTimeout(function(){
+            $('.neumerlin_line').removeClass('fade_out');
+            $('.element.neumerlin').removeClass('play');
+          }, timeoutHandle*4); /*2000*/
+
+
+          // Salad
+          window.setTimeout(function(){
+            $('.element.salad').addClass('play');
+          }, timeoutHandle*4); /*2000*/
+
+          window.setTimeout(function(){
+            $('.salad_line').addClass('fade_in');
+          }, timeoutHandle*5); /*2500*/
+
+          window.setTimeout(function(){
+            $('.salad_line').removeClass('fade_in');
+            $('.salad_line').addClass('fade_out');
+          }, timeoutHandle*6); /*3000*/
+
+          window.setTimeout(function(){
+            $('.salad_line').removeClass('fade_out');
+            $('.element.salad').removeClass('play');
+          }, timeoutHandle*7); /*3500*/
+
+
+          // Virt
+          window.setTimeout(function(){
+            $('.element.virt').addClass('play');
+          }, timeoutHandle*7); /*3500*/
+
+          window.setTimeout(function(){
+            $('.virt_line').addClass('fade_in');
+          }, timeoutHandle*8); /*4000*/
+
+          window.setTimeout(function(){
+            $('.virt_line').removeClass('fade_in');
+            $('.virt_line').addClass('fade_out');
+          }, timeoutHandle*9); /*4500*/
+
+          window.setTimeout(function(){
+            $('.virt_line').removeClass('fade_out');
+            $('.element.virt').removeClass('play');
+          }, timeoutHandle*10); /*5000*/
+
+
+          // Brandone
+          window.setTimeout(function(){
+            $('.element.brandone').addClass('play');
+          }, timeoutHandle*10); /*5000*/
+
+          window.setTimeout(function(){
+            $('.brandone_line').addClass('fade_in');
+          }, timeoutHandle*11); /*5500*/
+
+          window.setTimeout(function(){
+            $('.brandone_line').removeClass('fade_in');
+            $('.brandone_line').addClass('fade_out');
+          }, timeoutHandle*12); /*6000*/
+
+          window.setTimeout(function(){
+            $('.brandone_line').removeClass('fade_out');
+            $('.element.brandone').removeClass('play');
+          }, timeoutHandle*13); /*6500*/
+
+        // }
+
+        // else{
+        //   break;
+        // }
+        
+
+      // }
+      /*else{
+
+        break;
+      }*/
+      
+      
+
+
+      break;
+    case "ca3":
+      // do something the id is 3
+      break;
+    case "ca4":
+      // do something the id is 2
+      break;
+    case "ca5":
+      // do something the id is 2
+      break;
+    default:
+      //the id is none of the above
+  }
+})
+</script>
+
+
+<!-- Clear animation when click left & right -->
+<script type="text/javascript">
+  $('#slide_left').on('click', function(event){
+
+      timeoutHandle = 0;
+
+
+      // Close Com
+      $(".element").removeClass('active');
+      $('.stage').children('.element').not('.active').removeClass('inactive');
+      $('.stage').children('.element').children('.hide_open').css('display','block');
+      $('.stage').children('.element').children('.btn_close').css('display','none');
+      $('.stage').children('.element').children('.company_detail_wrapper').css('display','none');
+
+  });
+
+  $('#slide_right').on('click', function(event){
+
+      timeoutHandle = 0;
+
+      // Close Com
+      $(".element").removeClass('active');
+      $('.stage').children('.element').not('.active').removeClass('inactive');
+      $('.stage').children('.element').children('.hide_open').css('display','block');
+      $('.stage').children('.element').children('.btn_close').css('display','none');
+      $('.stage').children('.element').children('.company_detail_wrapper').css('display','none');
+
+  });
+
+
+  // Close Com when click navigation
+  $('.carousel-indicators li').on('click', function(event){
+    $(".element").removeClass('active');
+    $('.stage').children('.element').not('.active').removeClass('inactive');
+    $('.stage').children('.element').children('.hide_open').css('display','block');
+    $('.stage').children('.element').children('.btn_close').css('display','none');
+    $('.stage').children('.element').children('.company_detail_wrapper').css('display','none');
+  });
+
+
+</script>
+
+<script type="text/javascript">
+  function stop_animetaion() {
+    clearTimeout(timeoutHandle);
+  }
+</script>
+
+
+
+
+<!-- Progress Bar -->
+<!-- https://codepen.io/ccrch/pen/raGVeL -->
+
+<!-- Slider -->
+<!-- https://codepen.io/codewunder/pen/Bnspb -->
